@@ -1,3 +1,14 @@
+<tr>
+<td><%= link_to post.title, author_post_path(post) %></td>
+<td></td>
+<td><%= link_to 'Edit', edit_author_post_path(post), class:'btn btn-sm btn-warning' %></td>
+<td><%= link_to 'Remove', author_post_path(post), method: :delete, data:{ confirm: 'Are you sure?'} , class:'btn btn-sm btn-danger'%></td>
+
+</tr>
+
+
+
+<!--
 <div class='col-sm-6 col-lg-4'>
 <div class="card" style="width: 18rem;">
   <div class="card-img-top img-fluid" style='background-image: url(<%= post.banner_image_url %>); '></div>
@@ -8,4 +19,4 @@
     <%= link_to 'Read', post, class: 'btn btn-read' %>
   </div>
 </div>
-</div>
+</div> -->

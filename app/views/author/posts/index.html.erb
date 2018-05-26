@@ -1,4 +1,17 @@
+
+
 <div class="row">
-  <%= render  @posts %>
+<div>
+<%= link_to  "New post", new_author_post_path, class:'btn btn-lg btn-primary' %>
+  
+</div>
+<br>
+<table class="table table-striped">
+<tr>
+<th colspan="4">Title</th>
+</tr>
+<%= render  @posts %>
+</table>
+   
   
 </div>
