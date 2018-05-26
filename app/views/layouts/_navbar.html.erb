@@ -12,8 +12,9 @@
         <%= link_to 'Contact', contact_path, class: "nav-link #{yield(:contact_active)}" %>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="#">Pricing</a>
+        <%= link_to 'My posts', author_posts_path, class: "nav-link #{yield(:author_active)}" %>
       </li>
+      
       <li class="nav-item dropdown">
         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
           Dropdown link
