@@ -33,3 +33,4 @@ def display_day_published
     "Published #{created_at.strftime('%-b %-d %Y %H')}"
 end
 end
+
