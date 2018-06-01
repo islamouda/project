@@ -18,7 +18,7 @@
         </a>
         <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
          <% if author_signed_in? %>
-          <%= link_to 'Account', '#', class: "dropdown-item" %>
+          <%= link_to 'Account', authors_account_path, class: "dropdown-item" %>
           <%= link_to 'My posts', authors_posts_path, class: "dropdown-item" %>
            <%= link_to 'Logout', destroy_author_session_path, method: :delete ,class: "dropdown-item" %>
 

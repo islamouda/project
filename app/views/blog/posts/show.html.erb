@@ -2,7 +2,7 @@
 <div class="row">
   <div class="col-md-10 offset-md-1 col-lg-8 offset-lg-2 text-xs-center">
     <h1><%= @post.title %></h1>
-    <div class="card-img-top img-fluid" style='background-image: url(<%= @post.banner_image_url %>); '></div>
+    <div class="card-img-top imageshow" style='background-image: url(<%= @post.banner_image_url %>); '></div>
     <p><%= @post.display_day_published%></p>
     <%= @post.body.html_safe %>
     <!-- -->
